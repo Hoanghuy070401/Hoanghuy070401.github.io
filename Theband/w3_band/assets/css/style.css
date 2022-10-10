@@ -1,0 +1,70 @@
+/*reset css*/
+*{
+    /* kiểu viết tắt emmet*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*
+làm theo 
+1 từ ngoài vào trong
+2 từ trên xuống dưới
+3 từ tổng quan đến chi tiết 
+*/
+
+/*
+1.vị trí
+2. kích thước (chiều rộng và cao)
+3. màu sắc
+4 kiểu dáng (kiểu chữ , hình tròn, hình vuông,..)
+*/
+/*chọn ghi đổng loạt giữ alt chọn từng biến và di chuyển xuống cuối bằng phím end */
+#main{
+
+}
+ 
+#header{
+height: 46px;
+background-color: black;
+}
+#nav{
+
+
+}
+
+#nav li{
+   display: inline-block; /*chuyển nội dung về 1 dòng */
+}
+
+#nav li a{
+    color: #fff;
+    text-decoration: none;/*bo gach chan*/
+   line-height: 46px;/*căn giữa chữ */
+    padding: 0 24px;/*cách chữ */
+    display: inline-block;
+}
+
+#nav li:hover a{/*đặt ở thẻ li vì nếu di chuột vào lớp con lớp cha sẽ mất hover*/
+ color: #000;
+ background-color: #fff;
+}
+
+#nav .subnav{
+    display: none;
+} 
+
+
+#slider{
+
+}
+
+#content{
+
+}
+
+#footer{
+
+}
