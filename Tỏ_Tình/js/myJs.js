@@ -1,14 +1,14 @@
 const textConfig = {
-  text1: "Chào cậu!",
-  text2: "Tớ có điều này muốn hỏi cậu nhớ phải trả lời thật lòng nhaaa:3333",
-  text3: "Cậu yêu tớ có phải không nào ._.",
+  text1: "Chào Bé!",
+  text2: "Anh có điều này muốn hỏi Bé nhớ phải trả lời thật lòng nhaaa:3333",
+  text3: "Bé yêu Anh có phải không nào ._.",
   text4: "Lớn rồi trả lời thật lòng không được im lặng đâu nhá. :v",
-  text5: "Cậu mơ à???",
-  text6: "Yêu cậu nhấttttt <3",
-  text7: "lí do cậu thích tớ đi :vvvv",
+  text5: "Anh mơ à???",
+  text6: "Yêu Anh nhấttttt <3",
+  text7: "lí do Em thích anh đi :vvvv",
   text8: "Gửi cho tớ <3",
-  text9: "Thích cậu thì yêu cậu thôi:>>",
-  text10: "Tớ biết mà ^^ Yêu cậu :3",
+  text9: "Thích Anh thì yêu Anh thôi:>>",
+  text10: "Anh biết mà ^^ Yêu Emm :3",
   text11:
     "Còn chờ gì nữa mà ko inbox cho tớ điiiiiii",
   text12: "Okii lunn <3",
@@ -138,7 +138,7 @@ $(document).ready(function () {
           text: textConfig.text11,
           confirmButtonColor: "#83d0c9",
           onClose: () => {
-            window.location = "https://www.facebook.com/TranDucProgrammer/";
+            window.location = "https://www.facebook.com/profile.php?id=100006143508132";
           },
         });
       }
