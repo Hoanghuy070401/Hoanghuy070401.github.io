@@ -1,0 +1,153 @@
+html{
+    height: 2000px;
+}
+/*lớp phủ*/
+h1:hover/*di chuột tới chuyển màu*/{
+color: #ccc;
+}
+h1:active /*click  chuột  chuyển màu*/{
+    color: #ccc;
+    }
+/*lớp giả chỉ tồn tại 1 before hoặc after*/
+box::before{
+     content:"";/*cú pháp phải có*/
+    display: block;/*tạo  khối */
+    width: 100px;/* gán màu và tạo kích thước*/
+    height: 100px;
+    background-color: #ccc;
+
+}
+box::after{
+    content:"";/*cú pháp phải có*/
+   display: block;/*tạo  khối */
+   width: 100px;
+   height: 100px;
+   background-color: #ccc;
+}
+/*các thuộc tính */
+.box{
+    width: 100px;
+    height: 100px;
+    padding :0px;/*thuộc tính đệm*/
+    border:0px; /*thuộc tính viền */
+    margin:0px;/*khoảng cách lề */
+    box-sizing: border-box;/*tổng kích thước tất cả các kích thước các thuộc tính */
+
+}
+
+/*gọi hàm css(lưu ý hàm phải đặt trong lớp :root)*/
+:root {
+    --heading-color: #333333;/*tên hàm và thuộc tính hàm*/
+    --heading-margin:10px;/*tên hàm và thuộc tính hàm*/
+    --text: rgb(0, 0, 100);/*tên hàm và thuộc tính hàm*/
+    --box-color: rgba(0, 0, 0,0.5);/*tên hàm và thuộc tính màu hàm phủ */
+}
+h1{
+    color: var(--heading-color);
+}
+p{
+    color: var(--text);
+}
+
+.header {
+    background-image: url(https://anhdep123.com/wp-content/uploads/2020/05/h%C3%ACnh-%E1%BA%A3nh-ch%C3%B3-con.jpg);/*chèn ảnh vào backgound*/
+    border: 20px dashed #ccc;/*căn chỉnh border theo kiểu (kích thước nét viền màu)*/
+    background-size: 100px;/*căn chỉnh kích thước background*/
+    background-origin: content-box;/*căn chỉnh theo thích thước trong các lớp*/
+    background-position: center;/*căn chỉnh vị trí ảnh trên trình duyệt hoặc thẻ*/
+    box-sizing: border-box;/*tạo họp và căn chỉnh hộp*/
+    background: url( ) center/contain no-repeat;/*cú pháp rút gọn của background*/
+   /* giữ header dính tại top và khi kéo thẻ trình duyệt sẽ giữ header lại  lưu ý các trình duyệt có thể hỗ trợ*/
+    position:sticky; /*từ khóa*/
+    position: -webkit-sticky;
+    top: 0;
+    /*giữ header tại top trình duyệt*//*
+    position: fixed;/*từ khóa
+    top:0 ; */
+  
+}
+ /*thiết lập vị trí tương đối lấy vị trí của thẻ làm vị trí gốc tọa độ , cho phép đè lên thẻ khác*/
+.blue {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+.red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position:relative;/*từ khóa*/
+    top:50px ;
+}
+
+/*lấy vị trí thẻ cha làm vị trí phụ thuộc (phải có position trên thẻ cha)*/
+.box {
+    width: 500px;
+    height: 250px;
+    margin: 20px;
+    position: relative;/*từ khóa*/
+    background-color: #ccc;
+}
+
+.box-child {
+    
+    background-color: rgba(128, 0, 128, 0.5);
+    position: absolute;/*từ khóa*/
+    top:0 ;
+    bottom: 0;
+    left:0 ;
+    right:0 ;
+}
+
+.box {
+    height: 500px;
+    background-image: url(https://fullstack.edu.vn/assets/images/f8_avatar.png);
+    background-size: 150px;/*căn chỉnh kích thước ảnh*/
+    background-size: contain;/*căn chỉnh theo chiều dọc*/
+    background-size: cover;/*căn chỉnh theo chiều ngang*/
+    background-repeat:no-repeat;/*ko lặp lạ ảnh*/
+    background: url( ) center/contain no-repeat;/*cú pháp rút gọn*/
+}
+
+/*trick*/
+/* căn giữa */
+.box{
+    text-align: center;/*căn chỉnh chữ có thừa kế từ lớp cha */
+    line-height:100px  ;/*căn chỉnh chiều cao có thừa kế*/
+    display: flex;/*căn giữa tự động*/
+    margin: auto;
+    /*căn giữa theo trục xy*/
+    align-items: center;
+    justify-content: center;
+   
+    
+
+}
+.thecha {
+    height: 100px;
+    position: relative;
+}
+.thecon{
+    /*căn giữa tùy ý*/
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%,50%);/*căn giữa độc lập theo trục xy*/
+    display: flex;
+}
+/*tạo lớp giả có dấu gạch trước phần tử căn giữa */
+.phantucangiua{
+    margin: auto;
+}
+.phantucangiua::after
+{
+    position: absolute;
+    left: 0;
+    content: "";
+    border-left: 3px solid #fff;/*quy đinh thuộc tính*/
+    height: 50px;/*quy định chièu cao*/
+}
+/*thay the anh loi */
+.anhloi{
+    
+}

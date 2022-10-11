@@ -26,9 +26,14 @@ làm theo
 
 }
  
+/* begin header */
 #header{
 height: 46px;
 background-color: black;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
 }
 #nav{
 display: inline-block;
@@ -102,17 +107,15 @@ display: inline-block;
     font-size: 20px;
     line-height: 46px;
 }
-
-
-
+/* end header */
+/* begin Middle  */
 #slider{
     min-height: 500px;
 background-color: #333;
 
 }
-
 #content{
-
+height: 1000px;
 }
 
 #footer{
