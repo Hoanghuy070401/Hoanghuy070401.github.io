@@ -286,7 +286,7 @@ html {
 }
 
 .btn-search #form-search {
-    background: rgb(220, 216, 216);
+    background-color: var(--red-orange-color-wheel);
     border-radius: 30px;
 }
 
@@ -298,21 +298,30 @@ html {
     width: 0;
     padding: 0;
     transition: all 0.25s ease-in-out;
+    border-radius: 50%;
 }
 
 #form-search:hover #search-text,
 #form-search #search-text:valid {
     width: 200px;
-    padding: 10px 0px 10px 15px;
+    height: 58px;
+    padding: 0px 0px 10px 15px;
+    background-color: var(--red-orange-color-wheel);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 56px;
 }
 
 #form-search #search-btn {
-    background-color: rgb(220, 216, 216);
+    background-color: var(--red-orange-color-wheel);
     cursor: pointer;
     border: none;
     padding: 10px;
     border-radius: 50%;
     font-size: 18px;
+}
+
+.btn-account.icon-account {
+    font-size: x-large;
 }
 
 
