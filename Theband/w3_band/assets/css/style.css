@@ -161,8 +161,37 @@ làm theo
     margin-top: 25px;
 }
 
-#content {
-    height: 1000px;
+#content {}
+
+#content .content-section {
+    width: 80%;
+    margin-left: auto;
+    /* can giua trai phai */
+    margin-right: auto;
+}
+
+#content .content-heading {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+    /*can khoang cach dong */
+}
+
+#content .section-sub-heading {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 25px;
+    opacity: 0.6;
+    /*lam mo text*/
+}
+
+#content .about-text {
+    margin-top: 25px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.6;
 }
 
 #footer {}
