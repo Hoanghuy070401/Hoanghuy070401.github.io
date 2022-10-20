@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+.navbar a.navbar-brand img {
+    height: 80px !important;
+    width: 80px !important;
+    border-radius: 10%;
+}
+
+.navbar-nav .nav-item i {
+    font-size: 50px;
+    text-align: center;
+}
+
+.navbar-nav .nav-item a {
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    min-width: fit-content;
+    color: #ffff;
+    border-radius: 5%;
+}
+
+.navbar-nav .nav-item a:hover {
+    background-color: rgb(13, 161, 121);
+}
+
+.navbar-nav .nav-item a.active {
+    background-color: rgb(13, 161, 121);
+}
+
+.navbar-nav .nav-item .row .col-12 {
+    width: 100%;
+
+}
+
+.navbar-bonsai {
+    background-color: rgb(13, 137, 156) !important;
+}
+
+@media (max-width: 762px) {
+    .navbar-nav .nav-item .row .col-12 {
+        width: 100%;
+        padding-left: auto;
+        padding-right: auto;
+    }
+}
+
+.top-body input {
+    border-color: rgb(13, 137, 156);
+    border-top: 2px solid rgb(13, 137, 156);
+    border-left: 2px solid rgb(13, 137, 156);
+    border-radius: 5px;
+}
+
+.top-body input::content {
+    border-color: rgb(13, 156, 142);
+}
+
+.top-body button {
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+table button {
+    padding-left: auto;
+    padding-right: auto;
+    height: 100%;
+}
+
+.btn-search {
+    background-color: rgb(17, 142, 138);
+    color: #ffff;
+}
+
+.btn-search:hover {
+    background-color: rgb(0, 94, 72);
+    color: #ffff;
+
+}
+
+/* Tab nav */
+.nav.nav-tabs li a.nav-{
+    text-decoration: none !important;
+    font-size: 12px;
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.nav.nav-tabs li a.nav-link.active {
+    color: #ffff;
+    background-color: rgb(13, 104, 104);
+}
+.nav.nav-tabs li a.nav-link{
+    color: rgb(12, 126, 92);
+
+}
+.nav.nav-tabs li i{
+    font-size: 30px;
+}
+/* Modal */
+.modal{
+    font-family: 'Times New Roman', Times, serif
+}
+.modal .modal-header{
+    background-color: rgb(13, 104, 104);
+    color: #ffff;
+
+}
+.modal .modal-body .col-12{
+    margin: 2% 0;
+}
+.modal .modal-body input{
+    padding: 1% 1%;
+}

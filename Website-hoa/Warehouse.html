@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản Lý Kho Hoa</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- icon -->
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <!-- header section starts  -->
+
+    <div class="header">
+        <div class="logo"><img src="./image/logo.jpg" alt="" /></div>
+
+        <nav class="navbar">
+            <a href="index.html" class="">home</a>
+            <a href="Product.html">Product</a>
+            <a href="Warehouse.html">Warehouse</a>
+            <a href="Report.html">Report</a>
+            <a href="Supplier.html">Supplier</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here..." />
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box" />
+            <input type="password" placeholder="your password" class="box" />
+            <p>forget your password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p>
+            <input type="submit" value="login now" class="btn" />
+        </form>
+    </div>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <div class="container">
+        <i class="add "><a href=""></a></i>
+        <!-- list nhập xuất  hàng  -->
+        <div class="list-in-out">
+            <div class="list-in">
+                <h1 style="text-align: center;"> Nhập Hàng </h1>
+                <button id="btn-open-in"><i class="add ti-slice">Add</i></button>
+                <form action="" method="get">
+                    <table>
+                        <thead>
+                            <th>Số Thứ Tự </th>
+                            <th>Mã Phiếu Nhập </th>
+                            <th>Mã Cây Cảnh</th>
+                            <th>Số Lượng </th>
+                            <th>Giá Bán </th>
+                            <th>Thành Tiền </th>
+                            <th colspan="2"></th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>h</td>
+                                <td>g</td>
+                                <td>h</td>
+                                <td>h</td>
+                                <td>h</td>
+                                <td>h</td>
+                                <td><a href="#"><i class="edit ti-pencil"></i></a></td>
+                                <td><a href="#"><i class=" delete ti-trash"></i></a</td>  
+                            </tr>
+                        </tbody>
+                        <tfoot >
+                            <td>Tổng</td>
+                            <td colspan="3">10000</td>
+                            <td colspan="2">1000</td>
+                            <td colspan="2"></td>
+                            
+                        </tfoot>
+
+                    </table>
+                </form>
+            </div>
+        <div class="modal-container" >
+            <!-- nhập hàng  -->
+
+            <div id="modal-add-in " >
+            <form action="" class="coupon-input" method="#" autocomplete="on">
+                <div class="form-input">
+                   
+                    <div class="title">
+                         Phiếu Nhập Hàng<button id="btn-close"><i class="ti-close" ></i></button>
+                    </div>
+                    <div class="form">
+                        <div class="inputfield">
+                            <label>Mã Phiếu Nhập </label>
+                            <input type="text" class="input" id="">
+                        </div>
+                        <div class="inputfield">
+                            <label>Tên Phiếu Nhập </label>
+                            <input type="text" class="input" id="">
+                        </div>
+                        <div class="inputfield">
+                            <label>Mã Nhà Cung Cấp  </label>
+                            <input type="text" class="input" id="">
+                        </div>
+                        <div class="inputfield">
+                            <label>Mã Cây Cảnh  </label>
+                            <input type="text" class="input" id="">
+                        </div>
+                        <div class="inputfield">
+                            <label>Số Lượng Nhập </label>
+                            <input type="datetime" class="input" id="">
+                        </div>
+    
+                        <div class="inputfield">
+                            <label>Giá Nhập </label>
+                            <input type="Number" class="input" id="">
+                        </div>
+                        <div class="inputfield ">
+                            <label>Thành Tiền </label>
+                            <input type="Number " class="input" id="">
+                        </div>
+    
+                        <div class="inputfield">
+                            <input type="submit" class="btn">
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <!-- end nhập -->
+    
+    
+            </div>
+            
+        
+
+
+            <div class="list-out " style="margin: 0 10%;">
+                <button class="btn-open-out"><i class="add ti-slice">Add</i></button>
+                <h1 style="text-align: center;"> Xuất Hàng </h1>
+                <form action="" method="get">
+                    <table >
+                        <thead >
+                            <th>Số Thứ Tự </th>
+                            <th>Mã Phiếu Xuất </th>
+                            <th>Mã Cây Cảnh</th>
+                            <th>Số Lượng</th>
+                            <th>Giá Bán </th>
+                            <th>Thành Tiền </th>
+                            <th colspan="2"></th>
+                        </thead>
+                        <tbody >
+                            <td>h</td>
+                            <td>h</td>
+                            <td>k</td>
+                            <td>t</td>
+                            <td>t</td>
+                            <td>h</td>
+                            <td><a href="#"><i class="edit ti-pencil"></i></a></td>
+                                <td><a href="#"><i class=" delete ti-trash"></i></a</td>
+                        </tbody>
+                        <tfoot >
+                            <td>Tổng</td>
+                            <td colspan="3">10000</td>
+                            <td colspan="2">1000</td>
+                            <td colspan="2"></td>
+                        </tfoot>
+                    </table>
+                </form>
+            </div>
+        
+        <div class="modal-add-out">
+            <!-- xuất hàng  -->
+        <form action="" class="coupon-output" method="#" autocomplete="on">
+            <div class="form-output">
+                <div class="title">
+                    Phiếu Xuất Hàng<button id="btn-close"><i class="ti-close" ></i></button>
+                </div>
+                <div class="form">
+                    <div class="outputfield">
+                        <label>Mã Phiếu Xuất </label>
+                        <input type="text" class="output" id="">
+                    </div>
+                    <div class="outputfield">
+                        <label>Tên Phiếu Xuất </label>
+                        <input type="text" class="output" id="">
+                    </div>
+                    <div class="outputfield">
+                        <label>Mã Nhà Cung Cấp  </label>
+                        <input type="text" class="output" id="">
+                    </div>
+                    <div class="outputfield">
+                        <label>Mã Cây Cảnh  </label>
+                        <input type="text" class="output" id="">
+                    </div>
+                    <div class="outputfield">
+                        <label>Số Lượng Xuất </label>
+                        <input type="datetime" class="output" id="">
+                    </div>
+
+                    <div class="outputfield">
+                        <label>Giá Bán  </label>
+                        <input type="Number" class="output" id="">
+                    </div>
+                    <div class="outputfield ">
+                        <label>Thành Tiền </label>
+                        <input type="Number " class="output" id="">
+                    </div>
+
+                    <div class="outputfield">
+                        <input type="submit" class="btn">
+                    </div>
+                </div>
+        </form>
+        <!-- end xuất  -->
+    
+        </div>
+        </div>
+    </div>
+    </div>
+        <!-- home section end  -->
+
+        <!-- footer section starts  -->
+
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>groco <i class="fas fa-shopping-basket"></i></h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.
+                    </p>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                                    <a href="#" class="fab fa-twitter"></a>
+                                    <a href="#" class="fab fa-instagram"></a>
+                                    <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links">
+                <i class="fas fa-phone"></i> 0922253847
+            </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> </a>
+            <a href="#" class="links">
+                <i class="fas fa-envelope"></i> shaikhanas@gmail.com
+            </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html" class="links">
+                <i class="fas fa-arrow-right"></i> home
+            </a>
+            <a href="Product.html" class="links">
+                <i class="fas fa-arrow-right"></i> Product</a>
+            <a href="Warehouse.html" class="links">
+                <i class="fas fa-arrow-right"></i> Warehouse
+            </a>
+            <a href="Supplier.html" class="links">
+                <i class="fas fa-arrow-right"></i> Supplier</a>
+            <a href="Report.html" class="links">
+                <i class="fas fa-arrow-right"></i> Report
+            </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email" />
+            <input type="submit" value="subscribe" class="btn" />
+            <img src="image/payment.png" class="payment-img" alt="" />
+        </div>
+    </div>
+
+    <div class="credit">
+        created by <span> mr. web designer </span> | all rights reserved
+    </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
