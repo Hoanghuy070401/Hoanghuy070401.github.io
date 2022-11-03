@@ -1,0 +1,40 @@
+/* mobile */
+
+@media (max-width:740px) {
+    #nav {
+        display: block;
+    }
+    #nav>li {
+        display: block;
+    }
+    #nav>li:first-child {
+        display: inline-block;
+    }
+    #header .search-icon {
+        display: none;
+    }
+    #header .menu-mobile {
+        display: block;
+    }
+    #header .search-icon {
+        display: none;
+    }
+    #header {
+        overflow: hidden;
+        /*giấu những thẻ bị vượt ra khỏi thẻ cha*/
+    }
+    #nav .subnav {
+        position: initial;
+        /*trả về giá trị mặc định */
+        background-color: #333;
+    }
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+}
+
+
+/* Pc*/
+
+@media (max-width:740px) {}

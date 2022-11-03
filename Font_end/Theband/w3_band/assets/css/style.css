@@ -198,6 +198,14 @@ làm theo
     font-size: 14px;
 }
 
+#header .menu-mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .menu-mobile,
 #header .search-btn {
     float: right;
     padding: 0 21px;
@@ -209,6 +217,15 @@ làm theo
     background-color: red;
 }
 
+#header .menu-mobile:hover {
+    background-color: #ccc;
+}
+
+#header .menu-mobile:hover .icon-mobile {
+    color: #000;
+}
+
+#header .icon-mobile,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -247,10 +264,13 @@ làm theo
 
 #content .content-section {
     width: 800px;
+    max-width: 100%;
     padding: 64px 0 112px;
     margin-left: auto;
     /* can giua trai phai */
     margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .content-heading {

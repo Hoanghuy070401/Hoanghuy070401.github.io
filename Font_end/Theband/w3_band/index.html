@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The-Band</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="shortcut icon" href="assets/img/icon-title.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/font-icons/themify-icons/themify-icons.css">
 </head>
@@ -33,9 +34,12 @@
                 </li>
             </ul>
             <!-- End :Nav -->
-            <!-- Begin:seach nav -->
+            <!-- mobile menu -->
+            <div id="mobile-menu" class="menu-mobile"><i class=" icon-mobile ti-menu"></i></div>
+
+            <!-- search -->
             <div class="search-btn"><i class="search-icon ti-search"></i></div>
-            <!-- End:seach nav -->
+
         </div>
 
         <div id="slider">
@@ -229,6 +233,32 @@
         }
         //nghe hành vi click vào button close
         modalClose.addEventListener('click', hideBuyTickets)
+            // hàm đóng mở menu ở mobile , gọi js set height của header , nếu click vào nút menu thì height là auto và đóng thì height là 46px(null)
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight; /*gán trực tiếp chiều cao vào hàm ko cần so sánh số giống nữa */
+
+        mobileMenu.onclick = function() {
+                var isClose = header.clientHeight === headerHeight;
+                if (isClose) {
+                    header.style.height = 'auto'; // mở  menu
+                } else {
+                    header.style.height = null; //ẩn menu 
+                }
+            }
+            // tự động đóng khi chọn phần tử menu 
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            menuItem.onclick = function() {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav'); /*câu lệnh chọn co liền kề*/
+                if (isParentMenu) {
+                    event.preventDefault(); /*Bỏ qua sự kiện chính*/
+                } else {
+                    header.style.height = null;
+                }
+            }
+        }
     </script>
 
 </body>

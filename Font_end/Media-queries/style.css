@@ -1,0 +1,43 @@
+html {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.mobile,
+.tablet,
+.computer {
+    display: none;
+}
+
+
+/* break poin */
+
+
+/* pc */
+
+@media (max-width:1024px) {
+    .computer {
+        display: block;
+    }
+}
+
+
+/* tablet */
+
+@media only screen and(min-width:740px) and (max-width:1023px) {
+    .tablet {
+        display: block;
+    }
+}
+
+
+/* mobile */
+
+@media (max-width:740px) {
+    .mobile {
+        display: block;
+    }
+}
