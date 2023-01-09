@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btncong"
+        android:layout_width="131dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="36dp"
+        android:text="Cong"
+        app:layout_constraintBottom_toTopOf="@+id/btnnhan"
+        app:layout_constraintEnd_toStartOf="@+id/btntru"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editso2"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <Button
+        android:id="@+id/btntru"
+        android:layout_width="138dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="12dp"
+        android:text="Tru"
+        app:layout_constraintBottom_toTopOf="@+id/btnchia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editso2" />
+
+    <Button
+        android:id="@+id/btnchia"
+        android:layout_width="137dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="148dp"
+        android:text="Chia"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnnhan"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="148dp"
+        android:text="Nhan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnchia"
+        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtketqua"
+        android:layout_width="194dp"
+        android:layout_height="114dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="ketqua"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgView" />
+
+    <EditText
+        android:id="@+id/editso1"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:hint="nhap so thu nhat"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/editso2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <EditText
+        android:id="@+id/editso2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="300dp"
+        android:ems="10"
+        android:hint="nhap so thu hai"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Mời Nhập Phép Tính"
+        android:textAlignment="center"
+        android:textSize="25dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/editso1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="176dp"
+        android:layout_height="104dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

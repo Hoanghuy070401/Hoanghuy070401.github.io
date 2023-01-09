@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <link rel="stylesheet" href="./asset/style.css">
+    <link rel="stylesheet" href="/modal/themify-icons/themify-icons.css">
+</head>
+<header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"> <span>Dịch vụ</span> đặt xe công nghệ </a>
+
+    <nav class="navbar">
+        <a href="services.jsp">Dịch vụ</a>
+        <a href="reviews.jsp">Đánh giá</a>
+        <a href="contact.jsp">Liên hệ</a>
+        <!-- <a>@Session["SoDienThoai"].ToString()</a> -->
+    </nav>
+
+
+    <div id="login-btn">
+        <a href="DangXuat" class="btn btn-warning"><button class="btn-login">Đăng xuất</button></a>
+        <i class="far fa-user"></i>
+    </div>
+
+
+</header>
+
+
+<body>
+    <div class="container">
+        <div class="list-table ">
+
+            <div class="btn-control "> <button type="#" class="btn-new js-Open-add"> <i class="ti-pencil-alt2"></i> ADD New</button>
+                <div class="seach"><input type="text" class="input"><a href=""><i class="icon ti-search"></i></a>
+                </div>
+            </div>
+            <div class="content">
+                <h2> danh sach</h2>
+                <a href=""><i class=""></i></a>
+
+            </div>
+
+            <form action="" method="post"></form>
+            <table class="table-form">
+                <thead class="table-header">
+                    <th>h</th>
+                    <th>h</th>
+                    <th>h</th>
+                    <th>h</th>
+                    <th>h</th>
+                    <th colspan="2"> </th>
+
+                </thead>
+                <tbody class="table-body ">
+                    <tr>
+                        <td>q</td>
+                        <td>q</td>
+                        <td>q</td>
+                        <td>q</td>
+                        <td>q</td>
+
+                        <td class=" btn-edit js-edit">
+                            <a><i class="  ti-pencil "></i></a>
+                        </td>
+                        <td class=" btn-delete js-delete">
+                            <a><i class="  ti-trash"></i></a>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+            </form>
+        </div>
+
+        <div class="footer">
+
+        </div>
+
+    </div>
+
+    <!-- sua -->
+    <div class="form-edit container">
+        <div class="add">
+            <a href=""><i class="btn-close ti-close js-close"></i></a>
+            <div class="content">
+                <h2>Edit</h2>
+            </div>
+            <div class="form-input">
+                <form action="">
+                    <div class="add-nhap "><label for="">h :</label><input type="text" class="input"></div>
+                    <div class="add-nhap "><label for="">h :</label><input type="text" class="input"></div>
+                    <div class="add-nhap "><label for="">h :</label><input type="text" class="input"></div>
+                    <div class="add-nhap "><label for="">h :</label><input type="text" class="input"></div>
+                    <div class="add-nhap "><label for="">h :</label><input type="text" class="input"></div>
+                    <div class="btn-add">
+                        <button class="btn submit ">Xác Nhận </button> <button class="btn  cancel js-close">Hủy Bỏ</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- them  -->
+
+    <div class="form-add container">
+        <div class="add">
+            <a href=""><i class="btn-close ti-close js-close"></i></a>
+            <div class="content ">
+                <h2>Add New</h2>
+            </div>
+            <div class="form-input">
+                <form action="">
+                    <div class="add-nhap "><label for="">h :</label><input type="text" class="input"></div>
+                    <div class="add-nhap "><label for="">h :</label><input type="text" class="input"></div>
+                    <div class="add-nhap "><label for="">h :</label><input type="text" class="input"></div>
+                    <div class="add-nhap "><label for="">h :</label><input type="text" class="input"></div>
+                    <div class="add-nhap "><label for="">h :</label><input type="text" class="input"></div>
+                    <div class="btn-add">
+                        <button class="btn submit ">Xác Nhận </button> <button class="btn cancel js-close">Hủy Bỏ</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="delete container ">
+        <div class="row ">
+
+            <h1> Bạn Muốn Xóa </h1>
+            <div class="btn-accept">
+                <button class=" btn btn-yes">Yes </button>
+                <button class=" btn btn-no js-close-delete">No</button>
+            </div>
+
+        </div>
+
+        <script>
+            const edits = document.querySelectorAll('.js-edit') //chon icon /button
+            const FormEdit = document.querySelector('.form-edit') //chon form
+            const deletes = document.querySelectorAll('.js-delete') //chon icon /button
+            const dele = document.querySelector('.delete') //chon form
+            const add = document.querySelector('.js-Open-add') //chon icon /button
+            const FormAdd = document.querySelector('.form-add') //chon form
+            const closeForm = document.querySelector('.js-close') //chon icon /button
+            const closeDelete = document.querySelector('.js-close-delete') //chon icon /button
+
+
+
+
+            function showEditForm() {
+                FormEdit.classList.add('open-edit')
+            }
+
+            function hideForm() {
+                FormEdit.classList.remove('open-edit', 'open-add')
+
+            }
+
+            function showadd() {
+                FormAdd.classList.add('open-add')
+            }
+
+            function ShowDelete() {
+                dele.classList.add('form-delete')
+            }
+
+            function BtnNo() {
+                dele.classList.remove('form-delete')
+            }
+
+            for (const edit of edits) {
+                edit.addEventListener('click', showEditForm)
+
+            }
+            closeForm.addEventListener('click', hideForm)
+            add.addEventListener('click', showadd)
+            for (delet of deletes) {
+                delet.addEventListener('click', ShowDelete)
+            }
+            closeDelete.addEventListener('click', BtnNo)
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp">
+    <LinearLayout
+        android:weightSum="10"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/item_image_Sp"
+            android:layout_weight="3"
+            android:src="@drawable/new1"
+            android:layout_width="180dp"
+            android:layout_height="100dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/item_ten_Sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ten San Pham"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:id="@+id/item_gia_Sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gia : 200000 d"
+                android:textStyle="italic"
+                android:textSize="18sp"
+                android:paddingLeft="5dp"
+                android:textColor="@android:color/holo_red_light"
+                />
+            <TextView
+                android:id="@+id/item_mota_Sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mo ta"
+                android:textStyle="italic"
+                android:textSize="10sp"
+                android:paddingLeft="5dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
