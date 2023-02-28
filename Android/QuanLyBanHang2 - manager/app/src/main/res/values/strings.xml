@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">Manager ADMIN Ban Hang</string>
-    <string name="m_t_chi_ti_t_s_n_ph_m">Mô Tả Chi Tiết Sản Phẩm</string>
-    <string name="th_m_v_o_gi_h_ng">Thêm Vào Giỏ Hàng</string>
-    <string name="gia">Gia</string>
-    <string name="t_n_s_n_ph_m">Tên Sản Phẩm</string>
-    <string name="todo">TODO</string>
-    <string name="ng_nh_p">Đăng Nhập Tài Khoản </string>
-</resources>
