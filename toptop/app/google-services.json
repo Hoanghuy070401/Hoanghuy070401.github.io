@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "197340788787",
+    "firebase_url": "https://toptop-14dd9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "toptop-14dd9",
+    "storage_bucket": "toptop-14dd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197340788787:android:b49e9cf39eee7721ec4b46",
+        "android_client_info": {
+          "package_name": "com.example.toptop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197340788787-238qgbf9upa78vootkab8kru814pkq5n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.toptop",
+            "certificate_hash": "7f9bda57c4aaa67defc8a1cb893a60b7f8528141"
+          }
+        },
+        {
+          "client_id": "197340788787-fujkak3ga339qrtq5sdi1bu3t5tlj2q5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4-Mhzmu6G9keSHQBm4n3rUsZLJMWLRt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197340788787-fujkak3ga339qrtq5sdi1bu3t5tlj2q5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

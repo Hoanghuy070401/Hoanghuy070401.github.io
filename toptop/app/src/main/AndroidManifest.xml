@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Include this permission any time your app needs location information. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- camera -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Microphone permissions -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Toptop"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".upsoundActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SoundActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MesengerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DiscoverActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FollowingActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".Login_Authecation.OtpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Authecation.SigupActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="face" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Authecation.FacebookActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Authecation.GoogleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Login_Authecation.AuthecationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".uploadData"
+            android:exported="true" />
+        <activity
+            android:name=".editorVideo.PortraitCameraActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".FaceFilters.FaceFilterActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
